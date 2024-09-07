@@ -54,14 +54,6 @@ ul {
     scroll-margin-top: 5rem;
 }
 
-
-/* .header-menus {
-    display: block;
-    max-width: 1120px;
-    margin: auto;
-    padding: 1.5rem 2rem;
-} */
-
 .header-fixo {
     position: fixed;
     top: 0;
