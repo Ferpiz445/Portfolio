@@ -194,18 +194,11 @@ hr {
     transform: scale(1.05);
 }
 
-.botao-container {
-    width: 100%;
-    max-width: 1120px;
-    margin: auto;
-    transform: translate(0, -50%);
-}
-
 .skills {
     display: flex;
     flex-direction: column;
     max-width: 1120px;
-    padding: 2rem 0rem;
+    padding: 2rem 2rem;
     margin: auto;
 }
 
@@ -241,7 +234,7 @@ hr {
 
 .skills-card {
     background: #0c0c0c;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -336,6 +329,104 @@ footer {
 .footer-autor {
     color: #fff2e780;
     font-family: Inter;
-    font-size: 1rem;
+    font-size: 12px;
     font-weight: 500;
+    text-align: center;
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+    nav {
+        /* flex-direction: column; */
+        gap: 1rem;
+    }
+
+    .menu {
+        display: none; /* Para transformar o menu em um "hamburger" mais tarde */
+    }
+
+    /* Adicionando um botão hamburger */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        max-width: 600px;
+        height: auto;
+        flex-direction: row;
+        gap: 2rem;
+        padding: 3rem;
+    }
+
+    .hero-imagens-container {
+        display: none;
+    }
+
+    .hero-imagens-container img {
+        width: 100%;
+        max-width: 150px;
+        opacity: 50%;
+    }
+
+    .skills{
+        max-width: 600px;
+    }
+
+    .skills-card {
+        flex-direction: row;
+        flex-basis: 34rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+    
+    nav {
+        padding: 0.5rem;
+    }
+
+    .hero {
+        padding: 2rem 3rem;
+        margin-top: 2rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-subtitulo {
+        font-size: 0.9rem;
+    }
+
+    .hero-imagens-container {
+        max-width: 100%;
+    }
+
+    .hero-imagens-container img {
+        width: 100%;
+        max-width: 150px;
+        opacity: 50%;
+    }
+
+    .skills {
+        padding: 2rem 3rem;
+    }
+
+    .skills-card {
+        flex-direction: column;
+        flex-basis: 100%;
+    }
 }
