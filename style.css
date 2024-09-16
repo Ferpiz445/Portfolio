@@ -275,17 +275,27 @@ hr {
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
-    flex-basis: 16rem;
+    flex-basis: 15rem;
     justify-content: space-between;
     gap: 1rem;
     transition: all 0.3s ease-out;
     cursor: pointer;
 }
 
-.skills-card:hover {
-    box-shadow: 0px 0px 35px 0 #161b53be;
+.front-card:hover {
+    box-shadow: 0px 0px 35px 0 #ff96003d;
     transform: translateY(-5px);
 }
+
+.back-card:hover {
+    box-shadow: 0px 0px 35px 0 #ca5b855b;
+    transform: translateY(-5px);
+}
+
+/* .skills-card:hover {
+    box-shadow: 0px 0px 35px 0 #161b53be;
+    transform: translateY(-5px);
+} */
 
 .skills-card-cabecalho {
     display: flex;
