@@ -279,17 +279,20 @@ hr {
     justify-content: space-between;
     gap: 1rem;
     transition: all 0.3s ease-out;
+    border: 2px solid #4d4d4d40;
     cursor: pointer;
 }
 
 .front-card:hover {
     box-shadow: 0px 0px 35px 0 #ff96003d;
     transform: translateY(-5px);
+    border: 2px solid #ca8c02;
 }
 
 .back-card:hover {
     box-shadow: 0px 0px 35px 0 #ca5b855b;
     transform: translateY(-5px);
+    border: 2px solid #c54b65;
 }
 
 /* .skills-card:hover {
