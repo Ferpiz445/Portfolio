@@ -54,6 +54,10 @@ ul {
     scroll-margin-top: 5rem;
 }
 
+#certificados-tela {
+    scroll-margin-top: 5rem;
+}
+
 .header-fixo {
     position: fixed;
     top: 0;
@@ -98,6 +102,7 @@ main {
 
 .principal {
     background: linear-gradient(to right, #000000, #1b1b1b, #000000);
+    /* background-image: url(assets/background-parallax.jpeg); */
 }
 
 .hero {
