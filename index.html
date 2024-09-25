@@ -7,17 +7,21 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <meta name="description" content="Landing Page de Felipe Monteiro"></meta>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="header-menus header-fixo">
         <nav>
+            <div class="menu-toggle" id="menu-toggle">
+                &#9776;
+            </div>
             <span id="logo-buttom" class="logo">Felipe Monteiro</span>
-            <ul class="menu">
+            <ul class="menu" id="menu">
                 <li><a id="home-buttom">Home</a></li>
                 <li><a id="about-buttom">Sobre</a></li>
-                <li><a id="skills-buttom">Skills</a></li>
                 <li><a id="certificados-buttom">Certificados</a></li>
-                <li><a>Contato</a></li>
+                <li><a id="skills-buttom">Skills</a></li>
+                <li><a id="contatos-buttom">Contatos</a></li>
             </ul>
             <a href="https://github.com/Ferpiz445" target="_blank" class="github">Github</a>
         </nav>
@@ -25,7 +29,7 @@
 
     <main>
 
-        <div id="home-tela" class="principal">
+        <div id="home-tela" class="hero-background">
             <section class="hero">
                 <header class="hero-conteudo">
                     <span class="destaque verde">portfolio</span>
@@ -33,7 +37,7 @@
                         <h1><span>Seu Site, </span><span>Sua Visão, </span><span>Nossa Expertise</span></h1>
                     </div>
                     <hr>
-                    <h2 class="hero-subtitulo">Desenvolvedor Front-End especializado em criar interfaces intuitivas e impactantes para elevar o seu projeto ao próximo nível. Vamos construir juntos o futuro digital!</h2>
+                    <h2 class="hero-subtitulo">Bem-vindo ao meu portfólio! Aqui estão alguns dos meus projetos em tecnologias como HTML, CSS, JavaScript, Angular e React. Sou focado em criar interfaces funcionais e intuitivas. Confira meu trabalho e veja como posso ajudar no seu próximo projeto!</h2>
                 </header>
                 <div class="hero-imagens-container">
                     <figure><img src="assets/code1.jpg"></figure>
@@ -60,141 +64,29 @@
             </section>
         </div>
 
-        <section id="skills-tela" class="skills">
+        <section data-aos="fade-right" data-aos-duration="1000" id="about-tela" class="about">
 
             <header class="skills-cabecalho">
-                <span class="destaque verde">Skills</span>
-                <h2 class="skills-titulo">Skills em Front-End, Back-End, etc...</h2>
-                <p class="skills-subtitulo">Confira as habilidades mais desenvolvidas e praticadas deste Developer!</p>
+                <span class="destaque verde">Sobre mim</span>
+                <h2 class="skills-titulo">Mas... Quem produz estes sites?</h2>
             </header>
 
-            <div class="skills-card-container">
+            <div class="sobre-container" data-aos="fade-up" data-aos-duration="800" data-aos-anchor-placement="top-center">
 
-                <div class="skills-card front-card">
-                    <header class="skills-card-cabecalho">
-                        <div class="skills-card-cabecalho-detalhes">
-                            <span class="destaque front">Front-End 🔥</span>
-                            <h3 class="skills-titulo">HTML</h3>
-                            <p class="skills-nivel">Extraordinário - 9/10</p>
-                        </div>
-                    </header>
-                    <div class="skills-joia">
-                        <img src="assets/thumbsup.png">
-                        <span class="skills-joia-concluido">Experiência na Área</span>
-                    </div>
-                </div>
-
-                <div class="skills-card front-card">
-                    <header class="skills-card-cabecalho">
-                        <div class="skills-card-cabecalho-detalhes">
-                            <span class="destaque front">Front-End 🔥</span>
-                            <h3 class="skills-titulo">CSS</h3>
-                            <p class="skills-nivel">Excelente - 8/10</p>
-                        </div>
-                    </header>
-                    <div class="skills-joia">
-                        <img src="assets/thumbsup.png">
-                        <span class="skills-joia-concluido">Experiência na Área</span>
-                    </div>
-                </div>
-
-                <div class="skills-card front-card">
-                    <header class="skills-card-cabecalho">
-                        <div class="skills-card-cabecalho-detalhes">
-                            <span class="destaque front">Front-End 🔥</span>
-                            <h3 class="skills-titulo">Javascript</h3>
-                            <p class="skills-nivel">Excelente - 8/10</p>
-                        </div>
-                    </header>
-                    <div class="skills-joia">
-                        <img src="assets/thumbsup.png">
-                        <span class="skills-joia-concluido">Experiência na Área</span>
-                    </div>
-                </div>
-                
-                <div class="skills-card front-card">
-                    <header class="skills-card-cabecalho">
-                        <div class="skills-card-cabecalho-detalhes">
-                            <span class="destaque front">Front-End 🔥</span>
-                            <h3 class="skills-titulo">Angular</h3>
-                            <p class="skills-nivel">Intermediário - 6/10</p>
-                        </div>
-                    </header>
-                    <div class="skills-joia">
-                        <img src="assets/thumbsup.png">
-                        <span class="skills-joia-concluido">Experiência na Área</span>
-                    </div>
-                </div>
-
-                <div class="skills-card front-card">
-                    <header class="skills-card-cabecalho">
-                        <div class="skills-card-cabecalho-detalhes">
-                            <span class="destaque front">Front-End 🔥</span>
-                            <h3 class="skills-titulo">React</h3>
-                            <p class="skills-nivel">Intermediário - 6/10</p>
-                        </div>
-                    </header>
-                    <div class="skills-joia">
-                        <img src="assets/aguarde.png">
-                        <span class="skills-joia-concluido">Produzindo Projetos...</span>
-                    </div>
-                </div>
-
-                <div class="skills-card back-card">
-                    <header class="skills-card-cabecalho">
-                        <div class="skills-card-cabecalho-detalhes">
-                            <span class="destaque back">Back-End 🔧</span>
-                            <h3 class="skills-titulo">PHP</h3>
-                            <p class="skills-nivel">Intermediário - 6/10</p>
-                        </div>
-                    </header>
-                    <div class="skills-joia">
-                        <img src="assets/thumbsup.png">
-                        <span class="skills-joia-concluido">Experiência na Área</span>
-                    </div>
-                </div>
-
-                <div class="skills-card back-card">
-                    <header class="skills-card-cabecalho">
-                        <div class="skills-card-cabecalho-detalhes">
-                            <span class="destaque back">Back-End 🔧</span>
-                            <h3 class="skills-titulo">Phyton</h3>
-                            <p class="skills-nivel">Intermediário - 6/10</p>
-                        </div>
-                    </header>
-                    <div class="skills-joia">
-                        <img src="assets/thumbsup.png">
-                        <span class="skills-joia-concluido">Experiência na Área</span>
-                    </div>
+                <header class="sobre-conteudo">
+                    <span>Salve manitos</span>
+                    <h2 class="hero-subtitulo">Bem-vindo ao meu portfólio! Aqui estão alguns dos meus projetos em tecnologias como HTML, CSS, JavaScript, Angular e React. Sou focado em criar interfaces funcionais e intuitivas. Confira meu trabalho e veja como posso ajudar no seu próximo projeto!</h2>
+                </header>
+                <div class="sobre-imagem">
+                    <figure><img style="max-width: 100%;" src="assets/code1.jpg"></figure>
                 </div>
 
             </div>
         </section>
 
-        <div id="certificados-tela" class="principal">
+        <div id="certificados-tela" class="certificados-background">
             <section class="hero">
-                <div class="hero-imagens-container">
-                    <figure><img src="assets/code1.jpg"></figure>
-                    <figure><img src="assets/code2.jpg"></figure>
-                    <figure><img src="assets/code3.jpg"></figure>
-                    <figure><img src="assets/code4.jpg"></figure>
-                    <figure><img src="assets/code5.jpg"></figure>
-                    <figure><img src="assets/code6.jpg"></figure>
-                    <figure><img src="assets/code7.jpg"></figure>
-                    <figure><img src="assets/code8.jpg"></figure>
-                    <figure><img src="assets/code9.jpg"></figure>
-                    <figure><img src="assets/code10.jpg"></figure>
-                    <figure><img src="assets/code11.jpg"></figure>
-                    <figure><img src="assets/code12.jpg"></figure>
-                    <figure><img src="assets/code13.jpg"></figure>
-                    <figure><img src="assets/code14.jpg"></figure>
-                    <figure><img src="assets/code15.jpg"></figure>
-                    <figure><img src="assets/code16.jpg"></figure>
-                    <figure><img src="assets/code17.jpg"></figure>
-                    <figure><img src="assets/code18.jpg"></figure>
-                    <figure><img src="assets/code19.jpg"></figure>
-                </div>
-                <header class="hero-conteudo">
+                <header class="hero-conteudo" data-aos="fade-down" data-aos-duration="800" data-aos-anchor-placement="bottom-bottom">
                     <span class="destaque verde">portfolio</span>
                     <div class="texto-animado">
                         <h1><span>Seu Site, </span><span>Sua Visão, </span><span>Nossa Expertise</span></h1>
@@ -207,24 +99,24 @@
 
         <section id="skills-tela" class="skills">
 
-            <header class="skills-cabecalho">
+            <header class="skills-cabecalho" data-aos="fade-right" data-aos-duration="1000" id="about-tela" class="about">
                 <span class="destaque verde">Skills</span>
                 <h2 class="skills-titulo">Skills em Front-End, Back-End, etc...</h2>
                 <p class="skills-subtitulo">Confira as habilidades mais desenvolvidas e praticadas deste Developer!</p>
             </header>
 
-            <div class="skills-card-container">
+            <div class="skills-card-container" data-aos="zoom-out" data-aos-duration="800" data-aos-anchor-placement="top-center">
 
                 <div class="skills-card front-card">
                     <header class="skills-card-cabecalho">
                         <div class="skills-card-cabecalho-detalhes">
-                            <span class="destaque front">Front-End 🔥</span>
+                            <span class="destaque-card front">Front-End 🔥</span>
                             <h3 class="skills-titulo">HTML</h3>
                             <p class="skills-nivel">Extraordinário - 9/10</p>
                         </div>
                     </header>
                     <div class="skills-joia">
-                        <img src="assets/thumbsup.png">
+                        <img src="assets/joinha.svg">
                         <span class="skills-joia-concluido">Experiência na Área</span>
                     </div>
                 </div>
@@ -232,13 +124,13 @@
                 <div class="skills-card front-card">
                     <header class="skills-card-cabecalho">
                         <div class="skills-card-cabecalho-detalhes">
-                            <span class="destaque front">Front-End 🔥</span>
+                            <span class="destaque-card front">Front-End 🔥</span>
                             <h3 class="skills-titulo">CSS</h3>
                             <p class="skills-nivel">Excelente - 8/10</p>
                         </div>
                     </header>
                     <div class="skills-joia">
-                        <img src="assets/thumbsup.png">
+                        <img src="assets/joinha.svg">
                         <span class="skills-joia-concluido">Experiência na Área</span>
                     </div>
                 </div>
@@ -246,13 +138,13 @@
                 <div class="skills-card front-card">
                     <header class="skills-card-cabecalho">
                         <div class="skills-card-cabecalho-detalhes">
-                            <span class="destaque front">Front-End 🔥</span>
+                            <span class="destaque-card front">Front-End 🔥</span>
                             <h3 class="skills-titulo">Javascript</h3>
                             <p class="skills-nivel">Excelente - 8/10</p>
                         </div>
                     </header>
                     <div class="skills-joia">
-                        <img src="assets/thumbsup.png">
+                        <img src="assets/joinha.svg">
                         <span class="skills-joia-concluido">Experiência na Área</span>
                     </div>
                 </div>
@@ -260,13 +152,13 @@
                 <div class="skills-card front-card">
                     <header class="skills-card-cabecalho">
                         <div class="skills-card-cabecalho-detalhes">
-                            <span class="destaque front">Front-End 🔥</span>
+                            <span class="destaque-card front">Front-End 🔥</span>
                             <h3 class="skills-titulo">Angular</h3>
                             <p class="skills-nivel">Intermediário - 6/10</p>
                         </div>
                     </header>
                     <div class="skills-joia">
-                        <img src="assets/thumbsup.png">
+                        <img src="assets/joinha.svg">
                         <span class="skills-joia-concluido">Experiência na Área</span>
                     </div>
                 </div>
@@ -274,13 +166,13 @@
                 <div class="skills-card front-card">
                     <header class="skills-card-cabecalho">
                         <div class="skills-card-cabecalho-detalhes">
-                            <span class="destaque front">Front-End 🔥</span>
+                            <span class="destaque-card front">Front-End 🔥</span>
                             <h3 class="skills-titulo">React</h3>
                             <p class="skills-nivel">Intermediário - 6/10</p>
                         </div>
                     </header>
                     <div class="skills-joia">
-                        <img src="assets/aguarde.png">
+                        <img src="assets/ampulheta.svg">
                         <span class="skills-joia-concluido">Produzindo Projetos...</span>
                     </div>
                 </div>
@@ -288,13 +180,13 @@
                 <div class="skills-card back-card">
                     <header class="skills-card-cabecalho">
                         <div class="skills-card-cabecalho-detalhes">
-                            <span class="destaque back">Back-End 🔧</span>
+                            <span class="destaque-card back">Back-End 🔧</span>
                             <h3 class="skills-titulo">PHP</h3>
                             <p class="skills-nivel">Intermediário - 6/10</p>
                         </div>
                     </header>
                     <div class="skills-joia">
-                        <img src="assets/thumbsup.png">
+                        <img src="assets/joinha.svg">
                         <span class="skills-joia-concluido">Experiência na Área</span>
                     </div>
                 </div>
@@ -302,21 +194,21 @@
                 <div class="skills-card back-card">
                     <header class="skills-card-cabecalho">
                         <div class="skills-card-cabecalho-detalhes">
-                            <span class="destaque back">Back-End 🔧</span>
+                            <span class="destaque-card back">Back-End 🔧</span>
                             <h3 class="skills-titulo">Phyton</h3>
                             <p class="skills-nivel">Intermediário - 6/10</p>
                         </div>
                     </header>
                     <div class="skills-joia">
-                        <img src="assets/thumbsup.png">
-                        <span class="skills-joia-concluido">Experiência na Área</span>
+                        <img src="assets/ampulheta.svg">
+                        <span class="skills-joia-concluido">Produzindo Projetos...</span>
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <div id="certificados-tela" class="principal">
+        <div id="contatos-tela" class="hero-background">
             <section class="hero">
                 <div class="hero-imagens-container">
                     <figure><img src="assets/code1.jpg"></figure>
@@ -339,7 +231,7 @@
                     <figure><img src="assets/code18.jpg"></figure>
                     <figure><img src="assets/code19.jpg"></figure>
                 </div>
-                <header class="hero-conteudo">
+                <header class="hero-conteudo" data-aos="fade-up" data-aos-duration="800" data-aos-anchor-placement="bottom-bottom">
                     <span class="destaque verde">portfolio</span>
                     <h1>Seu Site, Sua Visão, Nossa Expertise</h1>
                     <hr>
@@ -351,10 +243,14 @@
     </main>
 
     <footer>
-        <p class="footer-copy">Coryright <i class="verde">&lt;FELIPE/&gt;</i> 2024</p>
+        <p class="footer-copy">&copy; Coryright <i class="verde">&lt;FELIPE/&gt;</i> 2024</p>
         <p class="footer-autor">Website estilo Landing Page para demonstração de Curriculo Online!</p>
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
