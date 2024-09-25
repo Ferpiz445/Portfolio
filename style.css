@@ -122,7 +122,6 @@ main {
 }
 
 .hero-background {
-    /* background: linear-gradient(to right, #000000, #1b1b1b, #000000); */
     background-image: url(assets/bg1.jpeg);
     background-attachment: fixed;
     background-size: cover;
@@ -433,7 +432,6 @@ hr {
 }
 
 .skills-joia > img {
-    /* border-radius: 20rem; */
     width: 1.5rem;
 }
 
@@ -480,7 +478,6 @@ footer {
 
 @media (max-width: 768px) {
     nav {
-        /* flex-direction: column; */
         gap: 1rem;
     }
 
@@ -492,22 +489,23 @@ footer {
 
     .menu.active {
         display: flex;
-        flex-direction: column;
-        position: absolute; /* Torna o menu flutuante */
-        top: 95%; /* Ajuste para que ele apareça abaixo da nav */
+        flex-direction: row;
+        position: absolute;
+        top: 95%;
         left: 0;
         right: 0;
-        background-color: #111; /* Cor de fundo para o menu */
+        background-color: #111;
         padding: 1rem 0;
-        z-index: 999; /* Coloca o menu acima de outros elementos */
+        z-index: 999;
         gap: 1rem;
         align-items: center;
+        justify-content: center;
     }
     
-    /* Estilize os itens do menu para ficarem visíveis */
     .menu.active li a {
         color: #fff;
-        font-size: 1rem; /* Aumenta o tamanho do texto para mobile */
+        font-size: 1rem;
+        font-weight: 500;
     }
 
     .menu-toggle {
