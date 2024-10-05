@@ -57,3 +57,66 @@ document.getElementById("github-ctt").onclick = function () {
     window.open("https://github.com/Ferpiz445" , "_blank")
 }
 
+// Teste
+
+document.addEventListener('DOMContentLoaded', function () { 
+    const cards = document.querySelectorAll('.card-wrap');
+
+    cards.forEach((cardWrap) => {
+        const card = cardWrap.querySelector('.card');
+        const cardBg = card.querySelector('.card-bg');
+        const cardInfo = card.querySelector('.card-info');
+
+        let width = cardWrap.offsetWidth;
+        let height = cardWrap.offsetHeight;
+        let mouseX = 0;
+        let mouseY = 0;
+        let mouseLeaveDelay;
+
+        function handleMouseMove(e) {
+            const cardRect = cardWrap.getBoundingClientRect();
+            mouseX = e.pageX - cardRect.left - width / 2;
+            // mouseY = e.pageY - cardRect.top - height / 2;
+
+            const mousePX = mouseX / width;
+            const mousePY = mouseY / height;
+
+            const rX = mousePX * 30;
+            const rY = mousePY * -30;
+            const tX = mousePX * -40;
+            const tY = mousePY * -40;
+
+            card.style.transform = `rotateY(${rX}deg) rotateX(${rY}deg)`;
+            cardBg.style.transform = `translateX(${tX}px) translateY(${tY}px)`;
+        }
+
+        function handleMouseEnter() {
+            clearTimeout(mouseLeaveDelay);
+        }
+
+        function handleMouseLeave() {
+            mouseLeaveDelay = setTimeout(() => {
+                mouseX = 0;
+                mouseY = 0;
+                card.style.transform = 'rotateY(0deg) rotateX(0deg)';
+                cardBg.style.transform = 'translateX(0px) translateY(0px)';
+            }, 800);
+        }
+
+        cardWrap.addEventListener('mousemove', handleMouseMove);
+        cardWrap.addEventListener('mouseenter', handleMouseEnter);
+        cardWrap.addEventListener('mouseleave', handleMouseLeave);
+
+        // Set background image for card background
+        const dataImage = cardWrap.getAttribute('src');
+        if (dataImage) {
+            cardBg.style.backgroundImage = `url(${dataImage})`;
+        }
+
+        // Initialize width and height after everything is loaded
+        window.addEventListener('resize', function () {
+            width = cardWrap.offsetWidth;
+            height = cardWrap.offsetHeight;
+        });
+    });
+});
