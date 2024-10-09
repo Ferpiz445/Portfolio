@@ -59,7 +59,7 @@ document.getElementById("github-ctt").onclick = function () {
 
 // Teste
 
-document.addEventListener('DOMContentLoaded', function () { 
+document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.card-wrap');
 
     cards.forEach((cardWrap) => {
@@ -73,10 +73,17 @@ document.addEventListener('DOMContentLoaded', function () {
         let mouseY = 0;
         let mouseLeaveDelay;
 
-        function handleMouseMove(e) {
+        // Atualiza as dimensões do card ao redimensionar a janela
+        const updateDimensions = () => {
+            width = cardWrap.offsetWidth;
+            height = cardWrap.offsetHeight;
+        };
+
+        // Manipulador de movimento do mouse
+        const handleMouseMove = (e) => {
             const cardRect = cardWrap.getBoundingClientRect();
-            mouseX = e.pageX - cardRect.left - width / 2;
-            // mouseY = e.pageY - cardRect.top - height / 2;
+            mouseX = e.clientX - cardRect.left - width / 2;
+            mouseY = e.clientY - cardRect.top - height / 2;
 
             const mousePX = mouseX / width;
             const mousePY = mouseY / height;
@@ -88,35 +95,36 @@ document.addEventListener('DOMContentLoaded', function () {
 
             card.style.transform = `rotateY(${rX}deg) rotateX(${rY}deg)`;
             cardBg.style.transform = `translateX(${tX}px) translateY(${tY}px)`;
-        }
+        };
 
-        function handleMouseEnter() {
+        // Manipulador para a entrada do mouse
+        const handleMouseEnter = () => {
             clearTimeout(mouseLeaveDelay);
-        }
+        };
 
-        function handleMouseLeave() {
+        // Manipulador para a saída do mouse
+        const handleMouseLeave = () => {
             mouseLeaveDelay = setTimeout(() => {
                 mouseX = 0;
                 mouseY = 0;
                 card.style.transform = 'rotateY(0deg) rotateX(0deg)';
                 cardBg.style.transform = 'translateX(0px) translateY(0px)';
             }, 800);
-        }
+        };
 
+        // Adiciona os eventos de mouse
         cardWrap.addEventListener('mousemove', handleMouseMove);
         cardWrap.addEventListener('mouseenter', handleMouseEnter);
         cardWrap.addEventListener('mouseleave', handleMouseLeave);
 
-        // Set background image for card background
-        const dataImage = cardWrap.getAttribute('src');
+        // Define a imagem de fundo do card
+        const dataImage = cardWrap.getAttribute('data-src'); // Usar data-src é uma prática comum
         if (dataImage) {
             cardBg.style.backgroundImage = `url(${dataImage})`;
         }
 
-        // Initialize width and height after everything is loaded
-        window.addEventListener('resize', function () {
-            width = cardWrap.offsetWidth;
-            height = cardWrap.offsetHeight;
-        });
+        // Atualiza as dimensões na inicialização e ao redimensionar a janela
+        window.addEventListener('resize', updateDimensions);
+        updateDimensions(); // Chama uma vez para garantir o valor correto inicial
     });
 });
