@@ -24,9 +24,9 @@ document.getElementById("about-buttom").onclick = function (event) {
     document.getElementById("about-tela").scrollIntoView({ behavior: "smooth" });
 }
 
-document.getElementById("certificados-buttom").onclick = function (event) {
+document.getElementById("portfolio-buttom").onclick = function (event) {
     event.preventDefault();
-    document.getElementById("certificados-tela").scrollIntoView({ behavior: "smooth" });
+    document.getElementById("portfolio-tela").scrollIntoView({ behavior: "smooth" });
 }
 
 document.getElementById("skills-buttom").onclick = function (event) {
@@ -39,23 +39,17 @@ document.getElementById("contatos-buttom").onclick = function (event) {
     document.getElementById("contatos-tela").scrollIntoView({ behavior: "smooth" });
 }
 
-// Contatos 
-
-document.getElementById("whatsapp").onclick = function () {
-    window.open("https://wa.me//5511943536373" , "_blank")
+// Função para abrir links em uma nova aba
+function openLink(id, url) {
+    document.getElementById(id).onclick = function () {
+        window.open(url, "_blank");
+    };
 }
 
-document.getElementById("linkedin").onclick = function () {
-    window.open("https://www.linkedin.com/in/felipe-monteiro-a1ba1620a/" , "_blank")
-}
-
-document.getElementById("gmail").onclick = function () {
-    window.open("mailto:fe.monteiro2002@gmail.com" , "_blank")
-}
-
-document.getElementById("github-ctt").onclick = function () {
-    window.open("https://github.com/Ferpiz445" , "_blank")
-}
+openLink("whatsapp", "https://wa.me//5511943536373");
+openLink("linkedin", "https://www.linkedin.com/in/felipe-monteiro-a1ba1620a/");
+openLink("gmail", "mailto:fe.monteiro2002@gmail.com");
+openLink("github-ctt", "https://github.com/Ferpiz445");
 
 // Teste
 

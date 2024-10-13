@@ -60,7 +60,7 @@ ul {
     scroll-margin-top: 5rem;
 }
 
-#certificados-tela {
+#portfolio-tela {
     scroll-margin-top: 5rem;
 }
 
@@ -133,7 +133,7 @@ main {
     background-size: cover;
 }
 
-.certificados-background {
+.portfolio-background {
     background-image: url(assets/bg2.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -145,7 +145,7 @@ main {
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 6rem;
 
@@ -162,6 +162,7 @@ main {
   }
 
 .hero-conteudo {
+    width: 1120px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -431,33 +432,19 @@ hr {
     margin: 0;
 }
 
-/* .sobre-imagem {
-    transform:
-        perspective(800px)
-        rotateY(25deg) scale(0.9)
-        rotateX(10deg);
-    filter: blur(2px);
-    opacity: 0.5;
-    transition: 0.6s ease all;
-}
-
-.sobre-imagem:hover {
-    transform:
-      perspective(800px)
-      rotateY(-15deg)
-      translateY(-50px)
-      rotateX(10deg)
-      scale(1);
-    filter: blur(0);
-    opacity: 1;
-} */
-
 .about {
     display: flex;
     flex-direction: column;
     max-width: 1120px;
     padding: 2rem 2rem;
     margin: auto;
+}
+
+.portfolio-conteudo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
 }
 
 .skills {
@@ -577,7 +564,7 @@ hr {
     font-weight: 600;
 }
 
-.certificados {
+.portfolio {
     display: flex;
     flex-direction: column;
     max-width: 1120px;
@@ -750,7 +737,7 @@ footer {
     }
 
     .sobre-container {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .sobre-conteudo {
