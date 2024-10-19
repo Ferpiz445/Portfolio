@@ -860,6 +860,10 @@ footer {
         margin: unset;
     }
 
+    .portfolio-card > img {
+        width: 20rem;
+    }
+
     .skills {
         padding: 5rem 3rem;
     }
