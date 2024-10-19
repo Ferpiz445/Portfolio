@@ -2,8 +2,8 @@
 
 Este é o meu portfólio como desenvolvedor Front-End.
 
-## 🔗 Link
-[Acesse o site](https://github.com/Ferpiz445)
+## 🔗 Link do Portfolio
+[Acesse o site](https://ferpiz445.github.io/LandingPage/)
 
 ---
 
@@ -24,31 +24,10 @@ Este é o meu portfólio como desenvolvedor Front-End.
 
 ---
 
-## 📂 Como usar
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/Ferpiz445/portfolio.git
-   ```
-
-2. Navegue até o diretório do projeto:
-   ```bash
-   cd portfolio
-   ```
-
-3. Abra o arquivo `index.html` no seu navegador!
-
----
-
 ## 👨‍💻 Contato
 
 Se quiser conversar, colaborar ou dar feedback, pode me contatar:
 
 GitHub: [github.com/Ferpiz445](https://github.com/Ferpiz445)
 Email: [fe.monteiro2002@gmail.com]
-
----
-
-Este é o meu portfólio online! Vamos construir juntos o futuro digital! 💻✨
-
----
 
