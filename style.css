@@ -653,28 +653,10 @@ hr {
     cursor: pointer;
 }
 
-.whatsapp:hover {
+.contatos:hover {
     box-shadow: 0px 0px 35px 0 #15ff0054;
     transform: translateY(-5px);
     border: 2px solid #46b955;
-}
-
-.linkedin:hover {
-    box-shadow: 0px 0px 35px 0 #0077ff8f;
-    transform: translateY(-5px);
-    border: 2px solid #0084ff;
-}
-
-.gmail:hover {
-    box-shadow: 0px 0px 35px 0 #ff000062;
-    transform: translateY(-5px);
-    border: 2px solid #ff0000;
-}
-
-.github-ctt:hover {
-    box-shadow: 0px 0px 35px 0 #7700ff5e;
-    transform: translateY(-5px);
-    border: 2px solid #ae00ff;
 }
 
 .contatos-info {
