@@ -46,10 +46,8 @@ function openLink(id, url) {
     };
 }
 
-openLink("whatsapp", "https://wa.me//5511943536373");
 openLink("linkedin", "https://www.linkedin.com/in/felipe-monteiro-a1ba1620a/");
 openLink("gmail", "mailto:fe.monteiro2002@gmail.com");
-openLink("github-ctt", "https://github.com/Ferpiz445");
 openLink("oktohub", "https://oktohub.com.br/index.html");
 
 // Teste
