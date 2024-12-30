@@ -51,27 +51,6 @@ ul {
     list-style: none;
 }
 
-#home-tela {
-    scroll-margin-top: 5rem;
-    margin-top: 5rem;
-}
-
-#about-tela {
-    scroll-margin-top: 5rem;
-}
-
-#portfolio-tela {
-    scroll-margin-top: 5rem;
-}
-
-#skills-tela {
-    scroll-margin-top: 5rem;
-}
-
-#contatos-tela {
-    scroll-margin-top: 5rem;
-}
-
 .header-fixo {
     position: fixed;
     top: 0;
@@ -561,6 +540,12 @@ hr {
     box-shadow: 0px 0px 35px 0 #1c68cc41;
     transform: translateY(-5px);
     border: 2px solid #00a4ff;
+}
+
+.git:hover {
+    box-shadow: 0px 0px 35px 0 #8c00ff52;
+    transform: translateY(-5px);
+    border: 2px solid #8c00ff;
 }
 
 .oktohub-card:hover {
