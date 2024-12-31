@@ -9,35 +9,21 @@ menuToggle.onclick = function () {
 
 // Funções para scroll da nav
 
-document.getElementById("logo-buttom").onclick = function (event) {
-    event.preventDefault();
-    document.getElementById("home-tela").scrollIntoView({ behavior: "smooth" });
+function smoothScroll(buttonId, targetId) {
+    document.getElementById(buttonId).onclick = function (event) {
+        event.preventDefault();
+        document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
+    };
 }
 
-document.getElementById("home-buttom").onclick = function (event) {
-    event.preventDefault();
-    document.getElementById("home-tela").scrollIntoView({ behavior: "smooth" });
-}
+// Configurando os botões e suas seções alvo
+smoothScroll("logo-buttom", "home-tela");
+smoothScroll("home-buttom", "home-tela");
+smoothScroll("about-buttom", "about-tela");
+smoothScroll("portfolio-buttom", "portfolio-tela");
+smoothScroll("skills-buttom", "skills-tela");
+smoothScroll("contatos-buttom", "contatos-tela");
 
-document.getElementById("about-buttom").onclick = function (event) {
-    event.preventDefault();
-    document.getElementById("about-tela").scrollIntoView({ behavior: "smooth" });
-}
-
-document.getElementById("portfolio-buttom").onclick = function (event) {
-    event.preventDefault();
-    document.getElementById("portfolio-tela").scrollIntoView({ behavior: "smooth" });
-}
-
-document.getElementById("skills-buttom").onclick = function (event) {
-    event.preventDefault();
-    document.getElementById("skills-tela").scrollIntoView({ behavior: "smooth" });
-}
-
-document.getElementById("contatos-buttom").onclick = function (event) {
-    event.preventDefault();
-    document.getElementById("contatos-tela").scrollIntoView({ behavior: "smooth" });
-}
 
 // Função para abrir links em uma nova aba
 function openLink(id, url) {
