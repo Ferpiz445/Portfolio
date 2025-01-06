@@ -51,6 +51,10 @@ ul {
     list-style: none;
 }
 
+#home-tela {
+    margin-top: 5rem;
+}
+
 #home-tela, #about-tela, #portfolio-tela, #skills-tela, #contatos-tela {
     scroll-margin-top: 5rem;
 }
