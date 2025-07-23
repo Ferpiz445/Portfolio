@@ -63,7 +63,8 @@ ul {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #111111;
+    background: #1a1a1aa1;
+    backdrop-filter: blur(45px);
     width: 100%;
     z-index: 1000;
     padding: 1.5rem 2rem;
@@ -431,7 +432,7 @@ hr {
     display: flex;
     flex-direction: column;
     max-width: 1120px;
-    padding: 2rem 2rem;
+    padding: 6rem 2rem;
     margin: auto;
 }
 
@@ -484,7 +485,7 @@ hr {
     display: flex;
     flex-direction: column;
     max-width: 1120px;
-    padding: 2rem 2rem;
+    padding: 6rem 2rem;
     margin: auto;
 }
 
@@ -685,7 +686,7 @@ hr {
 }
 
 footer {
-    padding: 2rem;
+    padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -725,10 +726,11 @@ footer {
         display: flex;
         flex-direction: row;
         position: absolute;
-        top: 95%;
+        top: 100%;
         left: 0;
         right: 0;
-        background-color: #111;
+        background: #111111;
+        /* backdrop-filter: blur(45px); */
         padding: 1rem 0;
         z-index: 999;
         gap: 1rem;
@@ -835,6 +837,10 @@ footer {
         margin: unset;
     }
 
+    .card-container{
+        padding: 0;
+    }
+
     .portfolio-card > img {
         width: 20rem;
     }
@@ -850,5 +856,9 @@ footer {
 
     .contatos-card {
         flex-basis: 25rem;
+    }
+
+    footer{
+        padding: 2rem;
     }
 }
