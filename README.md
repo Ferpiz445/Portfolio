@@ -3,7 +3,7 @@
 Este é o meu portfólio como desenvolvedor Front-End.
 
 ## 🔗 Link do Portfolio
-[Acesse o site](https://ferpiz445.github.io/LandingPage/)
+[Acesse o site](https://ferpiz445.github.io/Portfolio/)
 
 ---
 
