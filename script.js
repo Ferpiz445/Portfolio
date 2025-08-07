@@ -7,6 +7,16 @@ menuToggle.onclick = function () {
     menu.classList.toggle('active');
 };
 
+// Age & Year
+const birth = new Date('12/16/2002')
+const today = new Date()
+const milliDay = 1000 * 60 * 60 * 24
+const ageInDays = (today - birth) / milliDay
+const ageInYears = Math.floor(ageInDays / 365)
+
+document.getElementById('idade').innerHTML = ageInYears
+document.getElementById('ano').innerHTML = today.getFullYear()
+
 // Funções para scroll da nav
 
 function smoothScroll(buttonId, targetId) {
