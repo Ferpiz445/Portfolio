@@ -428,12 +428,24 @@ hr {
     margin: 0;
 }
 
+/* About Me */
+
 .about {
     display: flex;
     flex-direction: column;
     max-width: 1120px;
     padding: 6rem 2rem;
     margin: auto;
+}
+
+.resume {
+    cursor: pointer;
+    animation: resumando 1.5s ease infinite;
+}
+
+@keyframes resumando {
+    0%, 100% { color: #696969; }
+    50% { color: #00ff22; }
 }
 
 .portfolio-container {

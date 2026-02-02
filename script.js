@@ -46,6 +46,7 @@ openLink("linkedin", "https://www.linkedin.com/in/felipe-monteiro-a1ba1620a/");
 openLink("gmail", "mailto:fe.monteiro2002@gmail.com");
 openLink("oktohub", "https://oktohub.com.br/index.html");
 openLink("transcribe", "https://transcribeimages.streamlit.app");
+openLink("resume", "assets/Felipe Monteiro.pdf");
 
 // Teste
 
